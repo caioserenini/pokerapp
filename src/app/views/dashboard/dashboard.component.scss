@@ -1,0 +1,68 @@
+
+mat-grid-list{
+    padding: 0px;
+    margin: 50px;
+    .cards{
+        margin: 0;
+    }
+}
+
+mat-grid-tile{
+
+
+}
+.choosingButton{
+    height: 100%;
+    width: 100% ;
+    font-size: 250%;
+
+}
+.choosingButton:hover{
+    transform: translateY(5px);
+    transition: 0.5s;
+}
+
+.selected{
+    border-width: 50px;
+    background-color: #673ab7;
+    color: white;
+
+}
+
+.content{
+    height:80%;
+    padding-bottom: inherit;
+}
+table {
+    width: 80%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+.mat-column-username{
+
+    text-align: start;
+}
+
+th{
+    background-color: #673ab7;
+    color: white;
+}
+
+mat-toolbar{
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.mat-elevation-z6 {
+    box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+.example-spacer {
+    flex: 2 2 auto;
+  }
+.timer{
+    padding-right: 1%;
+}
