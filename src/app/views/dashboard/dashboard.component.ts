@@ -12,17 +12,17 @@ export class DashboardComponent implements OnInit, OnDestroy {
   public user: any = JSON.parse(localStorage['user']);
   public fibonacci: number[] = [1,2,3,5,8,13,21,34,55];
   public chosen!: number;
-  public allUsers: any[] = JSON.parse(localStorage['allUsers']);  
+  public allUsers: any[] = JSON.parse(localStorage['allUsers']);
   displayedColumns: string[] = ['username','owner']
   opened = false;
   timer: number=0;
-  prazo: number=8; // em segundos
+  prazo: number=5; // em segundos
   timerRunning: boolean=false;
   subscription1$!: Subscription;
-  
+
   mediaSub!: Subscription;
   deviceXs!: boolean;
-  
+
   constructor(private router: Router, public mediaObserver: MediaObserver) { }
 
   chooseNumber(number: number){
@@ -76,7 +76,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
           if(this.chosen>0){
           this.router.navigate(['results']);}
         },1000)
-        
+
       }
 
     })

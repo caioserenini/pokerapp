@@ -1,16 +1,19 @@
 <mat-toolbar color='primary' class="mat-elevation-z6">
-    <button  mat-raised-button color='warn' (click)="eraseVotes(allVotes)">Zerar votos</button>      
+  <button  mat-raised-button color='accent' routerLink="/dashboard">Voltar a votação</button>
+    <span class="example-spacer"></span>
+    <button style='margin-right: 1%;' mat-raised-button color='warn' (click)="eraseVotes(allVotes)">Zerar votos</button>
+    <button  mat-raised-button color='warn' (click)="exitRoom()">Sair da Sala</button>
 </mat-toolbar>
 <mat-grid-list class='cards' [cols]="deviceXs?2:4" rowHeight="fit" style='height: 100%; width: 100%;' gutterSize="0.1%">
     <mat-grid-tile matRipple *ngFor='let element of allVotes' >
         <mat-card>
-            <mat-card-header>                
-                <mat-card-title>{{element.username}}</mat-card-title>                
+            <mat-card-header>
+                <mat-card-title>{{element.username}}</mat-card-title>
             </mat-card-header>
-            <mat-card-content>                
-                  {{element.vote}}                
+            <mat-card-content>
+                  {{element.vote}}
             </mat-card-content>
         </mat-card>
     </mat-grid-tile>
-       
+
 </mat-grid-list>

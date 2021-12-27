@@ -1,13 +1,13 @@
 <div fxLayoutAlign="center center" fxFlexFill class='main-div'>
-    <mat-card fxFlex="25">
+    <mat-card [fxFlex]="deviceXs?50:25">
         <mat-toolbar color='primary'>Bem vindo</mat-toolbar>
         <form fxLayoutAlign='center'fxLayout='column' class='signin' [formGroup]="form">
-            <mat-form-field >               
+            <mat-form-field >
               <input matInput placeholder="Digite seu nome" formControlName="username">
             </mat-form-field>
             <mat-checkbox formControlName="owner">Sou dono da sala</mat-checkbox>
-            <button routerLink="/dashboard" [disabled]="form.invalid" mat-raised-button  color='primary' (click)="signIn()">Entrar</button>          
-             
+            <button routerLink="/dashboard" [disabled]="form.invalid" mat-raised-button  color='primary' (click)="signIn()">Entrar</button>
+
           </form>
     </mat-card>
 </div>

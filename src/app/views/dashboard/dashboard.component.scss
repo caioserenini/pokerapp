@@ -7,8 +7,8 @@ mat-grid-list{
     }
 }
 
-mat-grid-tile{
-
+.tableTile{
+overflow:auto;
 
 }
 .choosingButton{
@@ -30,9 +30,14 @@ mat-grid-tile{
 }
 
 .content{
-    height:80%;
+    height:-webkit-fill-available;
     padding-bottom: inherit;
+
 }
+.tableTile{
+
+}
+
 table {
     width: 80%;
     height: 90%;
